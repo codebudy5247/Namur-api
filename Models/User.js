@@ -27,7 +27,21 @@ const UserSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    otp:String,
+    otp: String,
+    language: {
+      type: String,
+      enum: [
+        "hindi",
+        "english",
+        "tamil",
+        "telugu",
+        "malayalam",
+        "kannada",
+        "bangali",
+        "marathi",
+      ],
+      default: "english",
+    },
     gender: {
       type: String,
     },
