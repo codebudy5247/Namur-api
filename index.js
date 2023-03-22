@@ -25,13 +25,6 @@ app.use("/api", require("./routes")); //APIs
 //Connect to DB.
 connectDB();
 
-//static files {Server side rendering}
-// app.use(express.static(path.join(__dirname, "./krishiiyan/build")));
-
-// app.get("*", function (req, res) {
-//   res.sendFile(path.join(__dirname, "./krishiiyan/build/index.html"));
-// });
-
 const port = process.env.PORT || 5001;
 
 app.listen(port, () => {
